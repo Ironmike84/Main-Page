@@ -2,7 +2,7 @@
 let cardImageTwo = document.getElementById('cardImageTwo')
 let cardTwoDesc = document.getElementById('cardTwoDesc')
 cardTwoDesc.addEventListener('mouseover', function(){
-   cardImageTwo.style.opacity = '.1'
+   cardImageTwo.style.opacity = '.4'
    cardImageTwo.style.transition = '2s ease'
    
 })
@@ -15,7 +15,7 @@ cardTwoDesc.addEventListener('mouseleave', function(){
 let cardImageOne = document.getElementById('cardImageOne')
 let cardOneDesc = document.getElementById('cardOneDesc')
 cardOneDesc.addEventListener('mouseover', function(){
-   cardImageOne.style.opacity = '.1'
+   cardImageOne.style.opacity = '.4'
    cardImageOne.style.transition = '2s ease'
    
 })
@@ -28,7 +28,7 @@ cardOneDesc.addEventListener('mouseleave', function(){
 let cardImageThree = document.getElementById('cardImageThree')
 let cardThreeDesc = document.getElementById('cardThreeDesc')
 cardThreeDesc.addEventListener('mouseover', function(){
-   cardImageThree.style.opacity = '.1'
+   cardImageThree.style.opacity = '.4'
    cardImageThree.style.transition = '2s ease'
    
 })
