@@ -24,7 +24,7 @@ body{
   background-color: black;
     font-family: var(--primary-font);
     color: var(--First-Color);
-    background-image: url('C:/Users/TRDFRG/Desktop/Portfolio Final/Images/shutterstock_425076346.jpg');
+    background-image: url('shutterstock_425076346.jpg');
     background-size: cover;
     filter: brightness(105%);
     letter-spacing: 1.8;
@@ -99,12 +99,12 @@ nav:hover{
 
 .logo{
     position: absolute;
-
+    margin-left: 20px;
     margin-top: 0px;;
     padding-top: 0px;
     padding-right: 7px;
-    width: 100px;
-    height: 55px;
+    width: 47px;
+    height: 47px;
 }
 
 .name{
@@ -149,7 +149,7 @@ a:active {
 .container{
 
     position: absolute;
-    background-image: url('C:/Users/TRDFRG/Desktop/Portfolio Final/iStock-1129637376.jpg') ;
+    background-image: url('iStock-1129637376.jpg') ;
     background-size: cover;
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
     position: absolute;
