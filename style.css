@@ -768,18 +768,23 @@ button:focus{
 #cardImageThree:hover{
   opacity: .01;
 }
-#descThree{
-  
-  font-size: 10pt;
-}
+
 /* =============================================================================================================SMALLEST */
 @media screen and (min-width: 100px )and (max-width:615px ){
 
-  .spacer{
+  
+  .linkButtons{
+    position: fixed;
+    top:70px;
+    left:285px;
+    width: 500px;
+    height: 250px;
+  
     display: flex;
-    flex-direction: row;
-    width: 300px;
-    border: 1px solid red;
+    flex-direction: column;
+    
+    justify-content:space-evenly;
+    
   }
 
   .cardSection{
@@ -925,11 +930,18 @@ button:focus{
 /* ---------------------------------------------------------------------------------------------------------- Max Width */
  @media screen and (min-width: 550px )and (max-width: 815px ) {
 
-  .spacer{
+  .linkButtons{
+    position: absolute;
+    top:70px;
+    right:10px;
+    width: 500px;
+    height: 250px;
+  
     display: flex;
     flex-direction: row;
-    width: 300px;
-
+    
+    justify-content:space-evenly;
+    
   }
 
   .cardSection{
