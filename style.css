@@ -1,7 +1,7 @@
 
   
 :root {
-  --First-Color: silver;
+    --First-Color: silver;
   --Second-Color: Red;
   --Third-Color: grey;
   --Fourth-Color: chartreuse;
@@ -18,7 +18,12 @@
     padding: 0px;
 }
 
-
+.spacer{
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  
+}
 
 body{
   background-color: black;
@@ -31,7 +36,9 @@ body{
     line-height: 1.6;
     text-shadow: 1px 1px 2px rgb(0, 0, 0),
     2px 2px 3px rgb(0, 0, 0);
-
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
 nav{
@@ -152,7 +159,7 @@ a:active {
     background-image: url('iStock-1129637376.jpg') ;
     background-size: cover;
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
-    position: absolute;
+   
     border: 1px solid rgb(15, 15, 15);
     display: flex;
     flex-direction: column;
@@ -181,6 +188,7 @@ a:active {
     margin-bottom: 45px;
     display: flex;
     flex-direction: row;
+    
 }
 
 .profile-img{
@@ -409,81 +417,7 @@ button:focus{
   flex-direction: row;
 }
 
-.cardBorder{
-  cursor: pointer;
- 
-  border: 1px outset black;
-  border-radius: 10px;
-  height: fit-content;
-  width: 200px;
-  margin-left: 100px;
-  background-color: black;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9),
-          2px 2px 3px rgba(0, 0, 0, 0.7),
-          4px 4px 12px rgba(0, 0, 0, 0.3);
-          transition: 1s ease-in-out;
-}
 
-.cardBorder:hover{
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9),
-  2px 2px 3px rgba(0, 0, 0, 0.7),
-  3px 3px 6px rgba(0, 0, 0, 0.5),
-  4px 4px 8px rgba(0, 0, 0, 0.7),
-  6px 6px 12px rgba(0, 0, 0, 0.7);
-}
-
-.cardHeader{
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-  font-size: 12pt;
-  text-align: center;
-  color: silver;
-  height: 50px;
-  background-color: rgb(39, 37, 37);  
-  border: 0px outset rgb(19, 18, 18);
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9),
-          2px 2px 3px rgba(0, 0, 0, 0.7),
-          4px 4px 8px rgba(0, 0, 0, 0.3);
-          z-index: 4;
-      
-}
-.cardBody{
-  color: black;
-  text-shadow: 1px 1px 2px,
-               2px 2px 3px;
-  height: 150px;
-  background-color: rgb(97, 97, 97);
-  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.9),
-         inset 2px 2px 3px rgba(0, 0, 0, 0.7),
-         inset 4px 4px 8px rgba(0, 0, 0, 0.3);
-  transition: 1s ease-in-out;
-
-}
-
-.cardBody:hover{
-  
-  height: 150px;
-  background-color: rgb(97, 97, 97);
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9),
-         2px 2px 3px rgba(0, 0, 0, 0.7),
-         4px 4px 8px rgba(0, 0, 0, 0.3);
-  transition: 1s ease-in-out;
-}
-
-.cardFooter{
-  color: red;
-  height: 50px;
-  background-color: rgb(39, 37, 37);
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9),
-          2px 2px 3px rgba(0, 0, 0, 0.7),
-          4px 4px 8px rgba(0, 0, 0, 0.3);
-}
 
 #cardImageOne{
   margin-left: 10%;
@@ -491,19 +425,15 @@ button:focus{
   height: 150px;
 }
 
-
-
-
 #go{
   height: 30px;
   width: 50px;
   margin-left: 40%;
 }
 
-/* ----------------------------------------------------------------------------------------------------Card 1 */
+/* --------------------------------------------------------------------------------------------------------Card 1 */
 .cardBorderOne{
   cursor: pointer;
- 
   border: 1px outset black;
   border-radius: 10px;
   height: fit-content;
@@ -566,6 +496,7 @@ button:focus{
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9),
           2px 2px 3px rgba(0, 0, 0, 0.7),
           4px 4px 8px rgba(0, 0, 0, 0.3);
+  
 }
 
 
@@ -575,7 +506,7 @@ button:focus{
   height: 140px;
 }
 
-#cardOneDesc{
+#cardUnoDesc{
    font-weight: bold;
   color: rgb(3, 3, 3);
   position: absolute;
@@ -590,7 +521,7 @@ button:focus{
   overflow: hidden;
 }
 
-#cardOneDesc:hover{
+#cardUnoDesc:hover{
   font-size: 7pt;
   position: absolute;
   top:170px;
@@ -611,14 +542,91 @@ button:focus{
 }
 
 
+
 /* ----------------------------------------------------------------------------------------------------Card 2 */
+.cardBorderTwo{
+  cursor: pointer;
+ 
+  border: 1px outset black;
+  border-radius: 10px;
+  height: fit-content;
+  width: 200px;
+  margin-left: 100px;
+  background-color: black;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9),
+          2px 2px 3px rgba(0, 0, 0, 0.7),
+          4px 4px 12px rgba(0, 0, 0, 0.3);
+          transition: 1s ease-in-out;
+}
+
+.cardBorderTwo:hover{
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9),
+  2px 2px 3px rgba(0, 0, 0, 0.7),
+  3px 3px 6px rgba(0, 0, 0, 0.5),
+  4px 4px 8px rgba(0, 0, 0, 0.7),
+  6px 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+.cardHeaderTwo{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  font-size: 12pt;
+  text-align: center;
+  color: silver;
+  height: 50px;
+  background-color: rgb(39, 37, 37);  
+  border: 0px outset rgb(19, 18, 18);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9),
+          2px 2px 3px rgba(0, 0, 0, 0.7),
+          4px 4px 8px rgba(0, 0, 0, 0.3);
+          z-index: 4;
+      
+}
+.cardBodyTwo{
+  color: black;
+  text-shadow: 1px 1px 2px,
+               2px 2px 3px;
+  height: 150px;
+  background-color: rgb(97, 97, 97);
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.9),
+         inset 2px 2px 3px rgba(0, 0, 0, 0.7),
+         inset 4px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: 1s ease-in-out;
+
+}
+
+.cardBodyTwo:hover{
+  height: 150px;
+  background-color: rgb(97, 97, 97);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9),
+         2px 2px 3px rgba(0, 0, 0, 0.7),
+         4px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: 1s ease-in-out;
+}
+
+.cardFooterTwo{
+  color: red;
+  height: 50px;
+  background-color: rgb(39, 37, 37);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9),
+          2px 2px 3px rgba(0, 0, 0, 0.7),
+          4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
 #cardImageTwo{
   margin: 5px;
   width: 190px;
   height: 140px;
 }
 
-#cardTwoDesc{
+
+#cardDoceDesc{
    font-weight: bold;
   color: rgb(3, 3, 3);
   position: absolute;
@@ -633,7 +641,7 @@ button:focus{
   overflow: hidden;
 }
 
-#cardTwoDesc:hover{
+#cardDoceDesc:hover{
   font-size: 7pt;
   position: absolute;
   top:170px;
@@ -657,7 +665,6 @@ button:focus{
 /* ----------------------------------------------------------------------------------------------------Card 3 */
 .cardBorderThree{
   cursor: pointer;
- 
   border: 1px outset black;
   border-radius: 10px;
   height: fit-content;
@@ -722,7 +729,7 @@ button:focus{
   height: 140px;
 }
 
-#cardThreeDesc{
+#cardTraceDesc{
    font-weight: bold;
   color: rgb(3, 3, 3);
   position: absolute;
@@ -732,11 +739,21 @@ button:focus{
   font-size: 12pt;
   border: 1px dotted rgb(209, 4, 4);
   text-shadow: none;
- 
   transition: 1s ease-in-out;
   overflow: hidden;
 }
 
+#cardTraceDesc:hover{
+  font-size: 7pt;
+  position: absolute;
+  top:170px;
+  width: 200px;
+  height: 150px;
+  font-size: 12pt;
+  border: 1px solid red;
+  color: rgb(255, 253, 251);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
 #cardThreeDesc:hover{
   font-size: 7pt;
   position: absolute;
@@ -748,7 +765,6 @@ button:focus{
   color: rgb(255, 253, 251);
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
-
 #cardImageThree:hover{
   opacity: .01;
 }
@@ -756,10 +772,462 @@ button:focus{
   
   font-size: 10pt;
 }
+/* =============================================================================================================SMALLEST */
+@media screen and (min-width: 100px )and (max-width:615px ){
+
+  .spacer{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    border: 1px solid red;
+  }
+
+  .cardSection{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+   
+  }
+
+  .inner-container{
+    filter: drop-shadow(4px 10px 4px #00000080);
+    position: relative;
+    margin-left: 5px;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction:column;
+    border: 1px solid red;
+    height: 1000px;
+    width: 300px fit-content;
+}
+
+  .container{
+
+    position: absolute;
+    border: 1px solid rgb(15, 15, 15);
+    display: flex;
+    
+    flex-direction: column;
+    width: 300px fit-content;
+    height:1200px;
+    margin-left: 5px;
+    margin-top: 20px;   
+}
+
+.cardBorderOne{  
+  margin-left: 0px;
+  margin-right: 0px;
+ position: absolute;
+ top: 170px;
+ left: 60px;
+}
 
 
-/* -------------------------------------------------------------------------------------------MEDIA QUERIES */
-  @media all and (min-width: 100px) and (max-width: 450px) {
+  .cardBorderTwo{
+    margin-left: 0px;
+    margin-right: 0px;
+    position: absolute;
+    top: 440px;
+    left: 60px;
+  }
+  
+  .cardBorderThree{
+    margin-left: 0px;
+    margin-right: 0px;
+    position: absolute;
+    top: 710px;
+    left: 60px;
+  }
+
+  #cardUnoDesc{
+    font-weight: bold;
+   color: rgb(3, 3, 3);
+   position: absolute;
+   top:170px;
+   width: 80px;
+   height: 30px;
+   font-size: 12pt;
+   border: 1px dotted rgb(209, 4, 4);
+   text-shadow: none;
+  
+   transition: 1s ease-in-out;
+   overflow: hidden;
+ }
+ 
+ #cardUnoDesc:hover{
+   font-size: 7pt;
+   position: absolute;
+   top:50px;
+   width: 200px;
+   height: 150px;
+   font-size: 12pt;
+   border: 1px solid red;
+   color: rgb(255, 253, 251);
+   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+ }  
+      
+  #cardDoceDesc{
+        font-weight: bold;
+       color: rgb(3, 3, 3);
+       position: absolute;
+       top:170px;
+       width: 80px;
+       height: 30px;
+       font-size: 12pt;
+       border: 1px dotted rgb(209, 4, 4);
+       text-shadow: none;
+      
+       transition: 1s ease-in-out;
+       overflow: hidden;
+     }
+     
+  #cardDoceDesc:hover{
+       font-size: 7pt;
+       position: absolute;
+       top:50px;
+       width: 200px;
+       height: 150px;
+       font-size: 12pt;
+       border: 1px solid red;
+       color: rgb(255, 253, 251);
+       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+     }
+      
+  #cardTraceDesc{
+      font-weight: bold;
+     color: rgb(3, 3, 3);
+     position: absolute;
+     top:170px;
+     width: 80px;
+     height: 30px;
+     font-size: 12pt;
+     border: 1px dotted rgb(209, 4, 4);
+     text-shadow: none;
+     transition: 1s ease-in-out;
+     overflow: hidden;
+   }
+  #cardTraceDesc:hover{
+      font-size: 7pt;
+      position: absolute;
+      top:50px;
+      width: 200px;
+      height: 150px;
+      font-size: 12pt;
+      border: 1px solid red;
+      color: rgb(255, 253, 251);
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    }
+   
+
+} 
+
+
+/* ---------------------------------------------------------------------------------------------------------- Max Width */
+ @media screen and (min-width: 550px )and (max-width: 815px ) {
+
+  .spacer{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+
+  }
+
+  .cardSection{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+  }
+
+  .inner-container{
+    filter: drop-shadow(4px 10px 4px #00000080);
+    position: relative;
+    margin-left: 5px;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction:column;
+    
+    height: 150px;
+    width: 300px fit-content;
+}
+
+  .container{
+
+    position: absolute;
+    border: 1px solid rgb(15, 15, 15);
+    display: flex;
+    
+    flex-direction: column;
+    width: 300px fit-content;
+    height:1000px;
+    margin-left: 15px;
+    margin-top: 20px;   
+}
+
+.cardBorderOne{  
+  margin-left: 0px;
+  margin-right: 0px;
+ position: absolute;
+ top: 170px;
+ left: 10px;
+}
+
+
+  .cardBorderTwo{
+    margin-left: 0px;
+    margin-right: 0px;
+    position: absolute;
+    top: 170px;
+    left: 220px;
+  }
+  
+  .cardBorderThree{
+    margin-left: 0px;
+    margin-right: 0px;
+    position: absolute;
+    top: 170px;
+    left: 430px;
+  }
+
+  #cardUnoDesc{
+    font-weight: bold;
+   color: rgb(3, 3, 3);
+   position: absolute;
+   top:170px;
+   width: 80px;
+   height: 30px;
+   font-size: 12pt;
+   border: 1px dotted rgb(209, 4, 4);
+   text-shadow: none;
+  
+   transition: 1s ease-in-out;
+   overflow: hidden;
+ }
+ 
+ #cardUnoDesc:hover{
+   font-size: 7pt;
+   position: absolute;
+   top:50px;
+   width: 200px;
+   height: 150px;
+   font-size: 12pt;
+   border: 1px solid red;
+   color: rgb(255, 253, 251);
+   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+ }  
+      
+  #cardDoceDesc{
+        font-weight: bold;
+       color: rgb(3, 3, 3);
+       position: absolute;
+       top:170px;
+       width: 80px;
+       height: 30px;
+       font-size: 12pt;
+       border: 1px dotted rgb(209, 4, 4);
+       text-shadow: none;
+      
+       transition: 1s ease-in-out;
+       overflow: hidden;
+     }
+     
+  #cardDoceDesc:hover{
+       font-size: 7pt;
+       position: absolute;
+       top:50px;
+       width: 200px;
+       height: 150px;
+       font-size: 12pt;
+       border: 1px solid red;
+       color: rgb(255, 253, 251);
+       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+     }
+      
+  #cardTraceDesc{
+      font-weight: bold;
+     color: rgb(3, 3, 3);
+     position: absolute;
+     top:170px;
+     width: 80px;
+     height: 30px;
+     font-size: 12pt;
+     border: 1px dotted rgb(209, 4, 4);
+     text-shadow: none;
+     transition: 1s ease-in-out;
+     overflow: hidden;
+   }
+  #cardTraceDesc:hover{
+      font-size: 7pt;
+      position: absolute;
+      top:50px;
+      width: 200px;
+      height: 150px;
+      font-size: 12pt;
+      border: 1px solid red;
+      color: rgb(255, 253, 251);
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    }
+   
+
+} 
+  /* @media screen and (min-width: 1186px ) {
+
+    .spacer{
+      display: flex;
+      flex-direction: row;
+      width: 300px;
+      border: 1px solid red;
+    }
+
+    .cardSection{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      border: 1px solid red;
+    }
+
+    .inner-container{
+      filter: drop-shadow(4px 10px 4px #00000080);
+      position: relative;
+      margin-left: 5px;
+      margin-bottom: 45px;
+      display: flex;
+      flex-direction:column;
+      border: 1px solid red;
+      height: 150px;
+      width: 300px fit-content;
+  }
+
+    .container{
+
+      position: absolute;
+      border: 1px solid rgb(15, 15, 15);
+      display: flex;
+      
+      flex-direction: column;
+      width: 300px fit-content;
+      height:1000px;
+      margin-left: 15px;
+      margin-top: 20px;   
+  }
+
+  .cardBorderOne{  
+    margin-left: 0px;
+    margin-right: 0px;
+  position: absolute;
+  top: 170px;
+  left: 10px;
+  }
+
+
+    .cardBorderTwo{
+      margin-left: 0px;
+      margin-right: 0px;
+      position: absolute;
+      top: 170px;
+      left: 220px;
+    }
+    
+    .cardBorderThree{
+      margin-left: 0px;
+      margin-right: 0px;
+      position: absolute;
+      top: 170px;
+      left: 430px;
+    }
+
+    #cardUnoDesc{
+      font-weight: bold;
+    color: rgb(3, 3, 3);
+    position: absolute;
+    top:170px;
+    width: 80px;
+    height: 30px;
+    font-size: 12pt;
+    border: 1px dotted rgb(209, 4, 4);
+    text-shadow: none;
+    
+    transition: 1s ease-in-out;
+    overflow: hidden;
+  }
+  
+  #cardUnoDesc:hover{
+    font-size: 7pt;
+    position: absolute;
+    top:50px;
+    width: 200px;
+    height: 150px;
+    font-size: 12pt;
+    border: 1px solid red;
+    color: rgb(255, 253, 251);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  }  
+        
+    #cardDoceDesc{
+          font-weight: bold;
+        color: rgb(3, 3, 3);
+        position: absolute;
+        top:170px;
+        width: 80px;
+        height: 30px;
+        font-size: 12pt;
+        border: 1px dotted rgb(209, 4, 4);
+        text-shadow: none;
+        
+        transition: 1s ease-in-out;
+        overflow: hidden;
+      }
+      
+    #cardDoceDesc:hover{
+        font-size: 7pt;
+        position: absolute;
+        top:50px;
+        width: 200px;
+        height: 150px;
+        font-size: 12pt;
+        border: 1px solid red;
+        color: rgb(255, 253, 251);
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+      }
+        
+    #cardTraceDesc{
+        font-weight: bold;
+      color: rgb(3, 3, 3);
+      position: absolute;
+      top:170px;
+      width: 80px;
+      height: 30px;
+      font-size: 12pt;
+      border: 1px dotted rgb(209, 4, 4);
+      text-shadow: none;
+      transition: 1s ease-in-out;
+      overflow: hidden;
+    }
+    #cardTraceDesc:hover{
+        font-size: 7pt;
+        position: absolute;
+        top:50px;
+        width: 200px;
+        height: 150px;
+        font-size: 12pt;
+        border: 1px solid red;
+        color: rgb(255, 253, 251);
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+      }
+    
+
+  } 
+  */
+
+/* @media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3){
+
+    .cardSection{
+        width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid red;
+    }   
     .navigation-list{
       display: flex;
       flex-direction: column;
@@ -769,7 +1237,7 @@ button:focus{
       flex-direction: column;
       width: 175px auto;
       text-align: center;
-      height:fit-content;
+      height:100vh;
       margin-left: 5px;
       margin-top: 20px;
     }
@@ -810,7 +1278,45 @@ button:focus{
       width: fit-content;
     }
 
-}
+    .cardBorder{
+     
+      margin-left:5px;
+    }
+    #descOne{
+      position:fixed;
+      left: 10px;
+      top: 10px;
+      font-size: 10pt;
+    }
+    .cardBorderTwo{
+   
+    margin-left: 5px;
+  }
+    #descTwo{
+      position:inherit;
+      font-size: 10pt;
+    }
+    .cardBorderThree{
+     
+      margin-left: 5px;
+    }
+    #cardThreeDesc{
+      position: inherit;
+      font-weight: bold;
+     color: rgb(3, 3, 3);
+   
+     top:0px;
+     width: 80px;
+     height: 30px;
+     font-size: 12pt;
+     border: 1px dotted rgb(209, 4, 4);
+     text-shadow: none;
+    
+     transition: 1s ease-in-out;
+     overflow: hidden;
+   }
+
+  } 
 
 
   
@@ -822,4 +1328,4 @@ button:focus{
   to {
     transform: translateX(100%);
   }
-}
+}  */
