@@ -912,7 +912,7 @@ button:focus{
     }
     
     .linkButtons{
-      position: fixed;
+      position: absolute;
       top:70px;
       left:225px;
       width: 500px;
@@ -1101,14 +1101,14 @@ button:focus{
   
   footer{
     position: absolute;
-    top: 1050px;
+    top: 1300px;
     margin-left: 0px;
     left: 90px;
     font-size: 14pt;
   
 }
   .linkButtons{
-    position: fixed;
+    position: absolute;
     top:70px;
     left:215px;
     width: 500px;
@@ -1136,7 +1136,7 @@ button:focus{
     display: flex;
     flex-direction:column;
     
-    height: 1000px;
+    height: 1200px;
     width: 100vw fit-content;
 }
 
@@ -1148,7 +1148,7 @@ button:focus{
     
     flex-direction: column;
     width: 300px fit-content;
-    height:1200px;
+    height:1400px;
     margin-left: 5px;
     margin-top: 20px;   
 }
