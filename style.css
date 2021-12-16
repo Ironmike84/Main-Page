@@ -213,6 +213,12 @@ a:active {
     
 }
 
+#code{
+  margin-left: 75px;
+  height: 300px;
+  width: 500px;
+}
+
 .myExp{
     
   font-size: 12pt;
@@ -445,7 +451,7 @@ button:focus{
   border-radius: 10px;
   height: fit-content;
   width: 200px;
-  margin-left: 100px;
+  margin-left: 60px;
   background-color: black;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9),
           2px 2px 3px rgba(0, 0, 0, 0.7),
@@ -558,7 +564,7 @@ button:focus{
   border-radius: 10px;
   height: fit-content;
   width: 200px;
-  margin-left: 100px;
+  margin-left: 50px;
   background-color: black;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9),
           2px 2px 3px rgba(0, 0, 0, 0.7),
@@ -676,7 +682,7 @@ button:focus{
   border-radius: 10px;
   height: fit-content;
   width: 200px;
-  margin-left: 100px;
+  margin-left:50px;
   background-color: black;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9),
           2px 2px 3px rgba(0, 0, 0, 0.7),
@@ -776,12 +782,115 @@ button:focus{
   opacity: .01;
 }
 
+/* ----------------------------------------------------------------------------------------------------Card 4 */
+.cardBorderFour{
+  cursor: pointer;
+  border: 1px outset black;
+  border-radius: 10px;
+  height: fit-content;
+  width: 200px;
+  margin-left: 50px;
+  background-color: black;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9),
+          2px 2px 3px rgba(0, 0, 0, 0.7),
+          4px 4px 12px rgba(0, 0, 0, 0.3);
+          transition: 1s ease-in-out;
+}
+
+.cardHeaderFour{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  font-size: 12pt;
+  text-align: center;
+  color: silver;
+  height: 50px;
+  background-color: rgb(39, 37, 37);  
+  border: 0px outset rgb(19, 18, 18);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9),
+          2px 2px 3px rgba(0, 0, 0, 0.7),
+          4px 4px 8px rgba(0, 0, 0, 0.3);
+          z-index: 4;
+      
+}
+
+.cardBodyFour{
+  color: black;
+  text-shadow: 1px 1px 2px,
+               2px 2px 3px;
+  height: 150px;
+  background-color: rgb(97, 97, 97);
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.9),
+         inset 2px 2px 3px rgba(0, 0, 0, 0.7),
+         inset 4px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: 1s ease-in-out;
+
+}
+
+
+.cardFooterFour{
+  color: red;
+  height: 50px;
+  background-color: rgb(39, 37, 37);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9),
+          2px 2px 3px rgba(0, 0, 0, 0.7),
+          4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+#cardImageFour{
+  margin: 5px;
+  width: 190px;
+  height: 140px;
+}
+
+#cardQuattroDesc{
+   font-weight: bold;
+  color: rgb(3, 3, 3);
+  position: absolute;
+  top:290px;
+  width: 80px;
+  height: 30px;
+  font-size: 12pt;
+  border: 1px dotted rgb(209, 4, 4);
+  text-shadow: none;
+  transition: 1s ease-in-out;
+  overflow: hidden;
+}
+
+#cardQuattroDesc:hover{
+  font-size: 7pt;
+  position: absolute;
+  top:170px;
+  width: 200px;
+  height: 150px;
+  font-size: 12pt;
+  border: 1px solid red;
+  color: rgb(255, 253, 251);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+#cardImageFour:hover{
+  opacity: .01;
+}
+
+
+
 
 @media only screen 
   and (min-device-width: 375px) 
-  and (max-device-height: 667px) 
+  and (max-device-width: 467px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
-
+    #code{
+      margin-left: 75px;
+      height: 150px;
+      width: 200px;
+    }
 
     .profile-img{
       border: 1px solid red;
@@ -955,9 +1064,13 @@ button:focus{
   
   } 
 /* =============================================================================================================SMALLEST */
-@media screen and (min-width: 100px )and (max-width:615px ){
+@media screen and (min-width: 100px )and (max-width:1015px ){
   
-
+  #code{
+    margin-left: 75px;
+    height: 150px;
+    width: 200px;
+  }
   .profile-img{
  
     width: 145px;
@@ -971,10 +1084,11 @@ button:focus{
   }
   .contact-form{
     margin-left: 0px;
-    width: 220px;
+    width: 260px;
   }
   textarea{
-    width: 180px;
+    margin-left: 0px;
+    width: 240px;
   }
   
   .myExp{
@@ -1064,6 +1178,14 @@ button:focus{
     left: 0px;
   }
 
+  .cardBorderFour{
+    margin-left: 0px;
+    margin-right: 0px;
+    position: absolute;
+    top: 980px;
+    left: 0px;
+  }
+
   #cardUnoDesc{
     font-weight: bold;
    color: rgb(3, 3, 3);
@@ -1143,23 +1265,51 @@ button:focus{
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
     }
    
+    #cardQuattroDesc{
+      font-weight: bold;
+     color: rgb(3, 3, 3);
+     position: absolute;
+     top:170px;
+     
+     width: 80px;
+     height: 30px;
+     font-size: 12pt;
+     border: 1px dotted rgb(209, 4, 4);
+     text-shadow: none;
+     transition: 1s ease-in-out;
+     overflow: hidden;
+    }
+    
+    #cardQuattroDesc:hover{
+     font-size: 7pt;
+     position: absolute;
+     top:50px;
+     width: 200px;
+     height: 150px;
+     font-size: 12pt;
+     border: 1px solid red;
+     color: rgb(255, 253, 251);
+     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    }
 
 } 
 
 /* =================================================================================================================== */
 /* ---------------------------------------------------------------------------------------------------------- Max Width */
- @media screen and (min-width: 550px )and (max-width: 815px ) {
-
+ @media screen and (min-width: 550px )and (max-width: 1115px ) {
+  #code{
+    margin-left: 75px;
+    height: 250px;
+    width: 300px;
+  }
   .linkButtons{
     position: absolute;
     top:70px;
-    right:10px;
+    left:50px;
     width: 500px;
     height: 250px;
-  
     display: flex;
     flex-direction: row;
-    
     justify-content:space-evenly;
     
   }
@@ -1217,8 +1367,16 @@ button:focus{
     margin-left: 0px;
     margin-right: 0px;
     position: absolute;
-    top: 170px;
-    left: 430px;
+    top: 450px;
+    left: 220px;
+  }
+
+  .cardBorderFour{
+    margin-left: 0px;
+    margin-right: 0px;
+    position: absolute;
+    top: 450px;
+    left: 10px;
   }
 
   #cardUnoDesc{
@@ -1299,6 +1457,34 @@ button:focus{
       color: rgb(255, 253, 251);
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
     }
+
+    
+#cardQuattroDesc{
+  font-weight: bold;
+ color: rgb(3, 3, 3);
+ position: absolute;
+ top:170px;
+ 
+ width: 80px;
+ height: 30px;
+ font-size: 12pt;
+ border: 1px dotted rgb(209, 4, 4);
+ text-shadow: none;
+ transition: 1s ease-in-out;
+ overflow: hidden;
+}
+
+#cardQuattroDesc:hover{
+ font-size: 7pt;
+ position: absolute;
+ top:50px;
+ width: 200px;
+ height: 150px;
+ font-size: 12pt;
+ border: 1px solid red;
+ color: rgb(255, 253, 251);
+ text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
    
     footer{
       position: absolute;
