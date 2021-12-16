@@ -212,6 +212,13 @@ a:active {
     width: 400px;
     
 }
+
+.myExp{
+    
+  font-size: 12pt;
+  padding: 0px;
+}
+
 .contact-form{
     font-family: var(--primary-font);
     display: flex;
@@ -344,6 +351,7 @@ button{
     cursor: pointer;
     color: chartreuse;
     height: 35px;
+    width: 75px;
     background-color: rgba(46, 45, 45, 0.925);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8),
                 2px 2px 3px rgba(0, 0, 0, 0.5),
@@ -768,14 +776,227 @@ button:focus{
   opacity: .01;
 }
 
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-height: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+
+    .profile-img{
+      border: 1px solid red;
+      margin-left: 25px;
+      width: 175px;
+      height: 175px;
+      z-index: -1;
+    }
+  
+    .profile-desc{
+      margin-left: 25px;
+      width: 300px;
+    }
+    .contact-form{
+      width: 330px;
+    }
+    textarea{
+      width: 200px;
+    }
+    
+    .linkButtons{
+      position: fixed;
+      top:70px;
+      left:225px;
+      width: 500px;
+      height: 250px;
+    
+      display: flex;
+      flex-direction: column;
+      
+      justify-content:space-evenly;
+      z-index: 100;
+    }
+  
+    .cardSection{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+     
+    }
+  
+    .inner-container{
+      filter: drop-shadow(4px 10px 4px #00000080);
+      position: relative;
+      margin-left: 5px;
+      margin-bottom: 45px;
+      display: flex;
+      flex-direction:column;
+      
+      height: 1000px;
+      width: 100vw fit-content;
+  }
+  
+    .container{
+  
+      position: absolute;
+      border: 1px solid rgb(15, 15, 15);
+      display: flex;
+      
+      flex-direction: column;
+      width: 300px fit-content;
+      height:1200px;
+      margin-left: 5px;
+      margin-top: 20px;   
+  }
+  
+  .cardBorderOne{  
+    margin-left: 0px;
+    margin-right: 0px;
+   position: absolute;
+   top: 170px;
+   left: 60px;
+  }
+  
+  
+    .cardBorderTwo{
+      margin-left: 0px;
+      margin-right: 0px;
+      position: absolute;
+      top: 440px;
+      left: 60px;
+    }
+    
+    .cardBorderThree{
+      margin-left: 0px;
+      margin-right: 0px;
+      position: absolute;
+      top: 710px;
+      left: 60px;
+    }
+  
+    #cardUnoDesc{
+      font-weight: bold;
+     color: rgb(3, 3, 3);
+     position: absolute;
+     top:170px;
+     width: 80px;
+     height: 30px;
+     font-size: 12pt;
+     border: 1px dotted rgb(209, 4, 4);
+     text-shadow: none;
+    
+     transition: 1s ease-in-out;
+     overflow: hidden;
+   }
+   
+   #cardUnoDesc:hover{
+     font-size: 7pt;
+     position: absolute;
+     top:50px;
+     width: 200px;
+     height: 150px;
+     font-size: 12pt;
+     border: 1px solid red;
+     color: rgb(255, 253, 251);
+     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+   }  
+        
+    #cardDoceDesc{
+          font-weight: bold;
+         color: rgb(3, 3, 3);
+         position: absolute;
+         top:170px;
+         width: 80px;
+         height: 30px;
+         font-size: 12pt;
+         border: 1px dotted rgb(209, 4, 4);
+         text-shadow: none;
+        
+         transition: 1s ease-in-out;
+         overflow: hidden;
+       }
+       
+    #cardDoceDesc:hover{
+         font-size: 7pt;
+         position: absolute;
+         top:50px;
+         width: 200px;
+         height: 150px;
+         font-size: 12pt;
+         border: 1px solid red;
+         color: rgb(255, 253, 251);
+         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+       }
+        
+    #cardTraceDesc{
+        font-weight: bold;
+       color: rgb(3, 3, 3);
+       position: absolute;
+       top:170px;
+       width: 80px;
+       height: 30px;
+       font-size: 12pt;
+       border: 1px dotted rgb(209, 4, 4);
+       text-shadow: none;
+       transition: 1s ease-in-out;
+       overflow: hidden;
+     }
+    #cardTraceDesc:hover{
+        font-size: 7pt;
+        position: absolute;
+        top:50px;
+        width: 200px;
+        height: 150px;
+        font-size: 12pt;
+        border: 1px solid red;
+        color: rgb(255, 253, 251);
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+      }
+     
+  
+  } 
 /* =============================================================================================================SMALLEST */
 @media screen and (min-width: 100px )and (max-width:615px ){
-
   
+
+  .profile-img{
+ 
+    width: 145px;
+   height: 145px;
+    z-index: -1;
+  }
+
+  .profile-desc{
+    margin-left: 0px;
+    width: 250px;
+  }
+  .contact-form{
+    margin-left: 0px;
+    width: 220px;
+  }
+  textarea{
+    width: 180px;
+  }
+  
+  .myExp{
+    position: absolute; ;
+    left:0px;
+    top: 250px;
+    font-size: 8pt;
+    padding: 0px;
+  }
+  
+  footer{
+    position: absolute;
+    top: 1050px;
+    margin-left: 0px;
+    left: 90px;
+    font-size: 14pt;
+  
+}
   .linkButtons{
     position: fixed;
     top:70px;
-    left:285px;
+    left:215px;
     width: 500px;
     height: 250px;
   
@@ -783,7 +1004,7 @@ button:focus{
     flex-direction: column;
     
     justify-content:space-evenly;
-    
+    z-index: 100;
   }
 
   .cardSection{
@@ -802,7 +1023,7 @@ button:focus{
     flex-direction:column;
     
     height: 1000px;
-    width: 300px fit-content;
+    width: 100vw fit-content;
 }
 
   .container{
@@ -823,7 +1044,7 @@ button:focus{
   margin-right: 0px;
  position: absolute;
  top: 170px;
- left: 60px;
+ left: 0px;
 }
 
 
@@ -832,7 +1053,7 @@ button:focus{
     margin-right: 0px;
     position: absolute;
     top: 440px;
-    left: 60px;
+    left: 0px;
   }
   
   .cardBorderThree{
@@ -840,7 +1061,7 @@ button:focus{
     margin-right: 0px;
     position: absolute;
     top: 710px;
-    left: 60px;
+    left: 0px;
   }
 
   #cardUnoDesc{
@@ -970,7 +1191,7 @@ button:focus{
     
     flex-direction: column;
     width: 300px fit-content;
-    height:1000px;
+    height:1200px;
     margin-left: 15px;
     margin-top: 20px;   
 }
@@ -1079,7 +1300,14 @@ button:focus{
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
     }
    
-
+    footer{
+      position: absolute;
+      top: 1050px;
+      left: 150px;
+      margin-left:0px;
+      font-size: 14pt;
+     
+  }
 
 } 
  
