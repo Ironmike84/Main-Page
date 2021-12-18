@@ -887,7 +887,7 @@ button:focus{
   and (max-device-width: 467px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
     #code{
-      margin-left: 75px;
+      margin-left: 55px;
       height: 150px;
       width: 200px;
     }
@@ -1067,7 +1067,7 @@ button:focus{
 @media screen and (min-width: 100px )and (max-width:1015px ){
   
   #code{
-    margin-left: 75px;
+    margin-left: 45px;
     height: 150px;
     width: 200px;
   }
@@ -1149,7 +1149,7 @@ button:focus{
     flex-direction: column;
     width: 300px fit-content;
     height:1400px;
-    margin-left: 5px;
+    margin-left: 35px;
     margin-top: 20px;   
 }
 
