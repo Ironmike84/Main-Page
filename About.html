@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -32,10 +34,10 @@
     </nav>
     </header>
         <div class="inner-container">
-     
-        <div class="profile-image">
-            <img aria-hidden="true" class="profile-img" src="MichaelJG.jpg" alt="Picture of Michael">
+        <div class="profile-image" id="profile-image">
+            <img aria-hidden="true" class="AboutPic" src="MichaelJG.jpg" alt="Picture of Michael">
         </div>
+        
         <div class="profile-desc">
             <table class="myExp">
                 <thead>
@@ -46,24 +48,61 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  <tr id>
                     <td>HTML</td>
                     <td>3</td>
-                    <td>Advanced</td>
+                    <td>Advanced <div id="showHtml">Details</div></td>
                   </tr>
                   <tr>
                     <td>CSS</td>
                     <td>2</td>
-                    <td>Intermediate</td>
+                    <td>Intermediate <div id="showCSS">Details</div></td>
                   </tr>
                   <tr>
                     <td>JavaScript</td>
                     <td>1</td>
-                    <td>Beginner</td>
+                    <td>Beginner <div id="showJS">Details</div></td>
                   </tr>
                 </tbody>
             </table>
-           
+        </div>
+      
+        <div id="summaryContainer">
+          <div id="htmlHide">
+            <div class="htmlTitle"> HTML   <button id="closeHtml">X</button></div>
+              - Familair with syntax, tables, forms, document structure and flow!!!! </div>
+          <div id="cssHide">
+            <div class="cssTitle"> CSS/SASS   <button id="closeCSS">X</button></div>
+            CSS - Use of Animations, and Good styling skills,use of Variables, SASS,Compiling and Creating Nice Color Schemes!! </div>
+          <div id="jsHide">
+            <div class="jsTitle"> JavaScript   <button id="closeJS">X</button></div>
+            JS - Well versed in Syntax, use of Functions, Loops, Arrays, Objects, and building of API's utilizing node.js  </div>
+        </div>
+        <div id="aboutMeHide">
+          <table id="table">
+            <tr>
+              <td>Name:</td>
+              <td>Michael Gross</td>
+              </tr>
+              <td>Age:</td>
+              <td>36</td>
+              </tr>
+              <td>Location:</td>
+              <td>Florida</td>
+              </tr>
+              <td>School:</td>
+              <td>Career Foundry</td>
+              </tr>
+              <td>School:</td>
+              <td>Career Foundry</td>
+              </tr>
+              <td>Background:</td>
+              <td>18 years of Fabrication and Welding.</td>
+              </tr>
+              <td>Skills:</td>
+              <td>Problem Solving, Organization, Fast Learner.</td>
+              </tr>
+          </table>
         </div>
     </div>
         <footer>
@@ -75,6 +114,6 @@
 
     </div>
 
-
+<script src="script2.js"></script>
 </body>
 </html>
