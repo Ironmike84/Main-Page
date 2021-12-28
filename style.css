@@ -1161,12 +1161,16 @@ display: none;
     }
 
 #aboutMeShow{
-        position: fixed;
-        top: 530px;
+        position: absolute;
+        top: 200px;
         cursor: pointer;
         padding: 0px;
         margin: 0px;
         font-size: 8pt;
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgb(41, 40, 40)
     }
 .contact-form{
         margin-left: 0px;
